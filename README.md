@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+A closure is the area inside of a function where you can still access variables from the lexical environment.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+closure is used to store the name parameter when the inner function is returned. you can tell because name should be out of scope for the inner function without a closure.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+the name parameter for dansRoll is always the same. the roll outcome is the only variable.
+c. What is the lexical scope of `newRoll`?
+the lexical scope of "newRoll" is only inside of the inner unnamed function. 
 
 
 ### Task 3 - Stretch Goals
